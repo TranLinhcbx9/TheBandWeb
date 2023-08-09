@@ -228,6 +228,62 @@ html{
     align-items: center;
     /* margin-right: 10px; */
 }
-#footer{
+.tour-section .places-list{
+    padding: 32px 0px;
+    margin: 0 -8px;
+}
+.tour-section .place-item{
+    padding: 0 8px;
+    width: calc(100%/3);
+    float: left;
+}
+.tour-section .place-body{
+    background-color: #fff;
+    padding: 0.15px 16px;
+    font-size: 15px;
+    
+}
+.tour-section .place-img{
+    width: 100%;
+    display: block;
+    
+}
+.tour-section .place-img:hover{
+    opacity: 0.6;
+}
+.tour-section .place-name{
+    margin: 15px 0;
+    font-weight: bold;
+}
+.tour-section .place-time{
+    margin: 15px 0;
+    opacity: 0.6;
+}
+.tour-section .place-description{
+    margin: 15px 0;
+}
+.tour-section .place-buy-btn{
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    background-color: black;
+}
+.tour-section .place-buy-btn:hover{
+    background-color: #ccc;
+    border: none;
+    margin-bottom: 16px;
+}
+.buy-ticket-btn{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    display: inline-block;
 
+}
+.buy-ticket-btn:hover{
+    background-color: #ccc;
+
+}
+#footer{
 }
