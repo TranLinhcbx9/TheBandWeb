@@ -279,11 +279,128 @@ html{
     padding: 8px 16px;
     margin-bottom: 16px;
     display: inline-block;
+    border: none;
 
 }
 .buy-ticket-btn:hover{
     background-color: #ccc;
+    color: black;
 
 }
 #footer{
+}
+.modal{
+    position: fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background: rgba(0,0,0,0.3);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal.open-modal{
+    display: flex;
+}
+.modal-container{
+    margin-top: 100px;
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.3s;
+}
+.modal .modal-header{
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 16px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    background-color: rgb(0, 150, 136);
+}
+.modal .modal-heading-icon{
+    margin-right: 16px;
+}
+.modal .modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 12px;
+}
+.modal .modal-close:hover, #buy-tickets:hover, .modal-footer-close:hover{
+    background-color: rgb(204, 204, 204);
+    color: black;
+    cursor: pointer;
+}
+.modal .modal-body{
+    padding: 16px;
+}
+.modal .modal-label{
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+.modal-input {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+#buy-tickets {
+    border: none;
+    width: 100%;
+    padding: 16px;
+    background-color: #009688;
+    color: white;
+    text-transform: uppercase;
+}
+/* #buy-tickets:hover {
+    background-color: rgb(204, 204, 204);
+    color: black;
+    cursor: pointer;
+} */
+.modal-ti-check {
+    font-weight: bold;
+}
+.modal-need-help {
+    float: right;
+    padding: 16px 16px;
+    margin-bottom: 8px;
+}
+.modal-help {
+    color: #2196F3;
+}
+.modal-footer-close {
+    padding: 10px 15px;
+    margin-left: 15px;
+    background-color: red;
+    border: none;
+    color: white;
+    margin-top: 8px;
+}
+/* .modal-footer-close:hover {
+    background-color: rgb(204, 204, 204);
+    color: black;
+    cursor: pointer;
+} */
+.modal-footer-ti-close {
+    font-size: 9px;
+    font-weight: 400;
+}
+
+@keyframes modalFadeIn{
+    from{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
