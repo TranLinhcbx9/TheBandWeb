@@ -107,7 +107,7 @@
                                 <div class="place-time">Fri 27 Nov 2016</div>
                                 <div class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </div>
-                                <a href="" class="buy-ticket-btn">Buy Tickets</a>
+                                <button href="" class="buy-ticket-btn js-buy-ticket">Buy Tickets</button>
                                 <!-- <button class="place-buy-btn text-white">Buy Tickets</button> -->
                             </div>
                         </div>
@@ -119,7 +119,7 @@
                                 <div class="place-time">Sat 28 Nov 2016</div>
                                 <div class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </div>
-                                <a href="" class="buy-ticket-btn">Buy Tickets</a>
+                                <button href="" class="buy-ticket-btn js-buy-ticket">Buy Tickets</button>
                                 <!-- <button class="place-buy-btn text-white">Buy Tickets</button> -->
                             </div>
                         </div>
@@ -131,7 +131,7 @@
                                 <div class="place-time">Sun 29 Nov 2016</div>
                                 <div class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </div>
-                                <a href="" class="buy-ticket-btn">Buy Tickets</a>
+                                <button href="" class="buy-ticket-btn js-buy-ticket">Buy Tickets</button>
                                 <!-- <button class="place-buy-btn text-white">Buy Tickets</button> -->
                             </div>
                         </div>
@@ -152,6 +152,41 @@
 
         </div>
     </div>
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+            <header class="modal-header text-white">
+                <i class="modal-heading-icon ti-bag"></i>
+                Tickets
+            </header>
+            <div class="modal-body">
+                <label for="modal-price" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input type="text" id="modal-price" class="modal-input" placeholder="How many?">
+    
+                <label for="modal-email" class="modal-label">
+                    <i class="ti-user"></i>
+                    Send to
+                </label>
+                <input type="text" id="modal-email" class="modal-input" placeholder="Enter email...">
+                <button id="buy-tickets">
+                    Pay
+                    <i class="modal-ti-check ti-check"></i>
+                </button>
+            </div>
+            <footer class="modal-footer">
+                <button class="modal-footer-close js-modal-footer-close">
+                    Close
+                    <i class="modal-footer-ti-close ti-close"></i>
+                </button>
+                <p class="modal-need-help">Need<a class="modal-help" href=""> help?</a></p>
+            </footer>
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js" ></script>
 </body>
-
 </html>
