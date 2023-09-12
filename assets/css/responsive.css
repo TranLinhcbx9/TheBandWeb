@@ -7,6 +7,15 @@
 }
 
 @media (max-width: 740px){
+    .s-full-width{
+        width: 100%;
+    }
+    .s-col-full{
+        width: 100%;
+    }
+    .s-mt-8{
+        margin-top: 8px !important;
+    }
     #header{
         overflow: hidden;
     }
@@ -34,12 +43,15 @@
         color: #fff;
         padding: 0 41px;
     }
-    #content .member-item{
+    #content .album-item{
         margin-top: 30px;
         width: 100%;
     }
-    #content .member-img {
+    #content .album-img {
         width: 60%;
+    }
+    .contact-form{
+        margin-top: 16px;    
     }
 }
 
