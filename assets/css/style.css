@@ -78,6 +78,7 @@ html{
     left: 0;
     right: 0;
     z-index: 1;
+    /* overflow: hidden; */
 }
 #nav{
     display: inline-block;
@@ -130,6 +131,13 @@ html{
 #nav .nav-arrow-down{
     font-size: 14px;
 }
+#header .mobile-menu-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+#header .mobile-menu-btn,
 #header .search-btn{
     color: white;
     font-size: 16px;
@@ -141,6 +149,13 @@ html{
     background-color: #f44336!important;
     cursor: pointer;
 }
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+#header .mobile-menu-btn .menu-icon:hover{
+    background-color: #000;
+}
+
 #slider{
     margin-top: 46.5px;
     /* min-height: 500px; */
@@ -177,8 +192,11 @@ html{
 #content .content-section{
     padding: 64px 0 112px;
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 #content .section-heading{
     margin-bottom: 25px;
