@@ -167,7 +167,7 @@ html{
     /* min-height: 500px; */
     /* font-size: 50px; */
     padding-top: 50%; 
-    background: url('/assets/img/sliders/VCT1.jpg') top center / cover no-repeat;
+    background: url('../img/sliders/VCT1.jpg') top center / cover no-repeat;
     /* 50% chiều ngang của chính nó */
     color: #fff;
     /* text-align: center; */
